@@ -1,12 +1,14 @@
 import { useRef } from "react"
 
-import { Title, Container, TopBackground, Form, ContainerInputs, Input,InputLabel } from "./styles"
+import { Title, Container, Form, ContainerInputs, Input, InputLabel } from "./styles"
 
 import api from "../../services/api"
 
+import { Button } from "../../components/Button/styles"
+
 import UsersImage from '../../assets/users.png'
 
-import { Button } from "../../components/Button/styles"
+import { TopBackground } from "../../components/Button/TopBackground/styles"
 
 function Home() {
 
@@ -19,7 +21,7 @@ function Home() {
     const data = await api.post('/usuarios', {
 
       email: email.current.value,
-      age: parseInt( age.current.value ),
+      age: parseInt(age.current.value),
       name: inpuName.current.value
 
     })
@@ -34,7 +36,6 @@ function Home() {
         <img src={UsersImage} />
 
       </TopBackground>
-
       <Form>
 
         <Title>Cadastrar Usuários</Title>
