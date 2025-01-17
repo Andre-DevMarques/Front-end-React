@@ -1,10 +1,12 @@
 import { useRef } from "react"
 
-import { Title, Container, TopBackground, Form, ContainerInputs, Input, Button, InputLabel } from "./styles"
+import { Title, Container, TopBackground, Form, ContainerInputs, Input,InputLabel } from "./styles"
 
 import api from "../../services/api"
 
 import UsersImage from '../../assets/users.png'
+
+import { Button } from "../../components/Button/styles"
 
 function Home() {
 
